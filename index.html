@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My People - Mini project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+</head>
+<body>
+    <h1>My People</h1>
+    <div id="main-container"></div>
+    <script id="people-template" type="text/x-handelbars-template">
+        {{#each people}}
+        <div id="{{id}}" class="card">
+            <p>{{name}}</p>
+            <p>{{email}}</p>
+        </div>
+        {{/each}}
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

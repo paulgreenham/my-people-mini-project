@@ -1,0 +1,35 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #2C3E50;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 5px;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #BDC3C7;
+    border-radius: 4px 4px;
+    box-shadow: 1px 1px 1px gray;
+    margin: 5px;
+    padding: 3px;
+    color: #2C3E50;
+}
+
+.card:hover {
+    background-color: #7F8C8D;
+}
+
+p:last-child {
+    color: #2980B9;
+    text-decoration: underline;
+    cursor: pointer;
+}
